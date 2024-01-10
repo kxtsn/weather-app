@@ -17,16 +17,16 @@ This Weather App is a React-based web application that allows users to check the
    ```
 
 2. **Install Dependencies:**
-```bash
-  npm install
-  ```
+   ```bash
+   npm install
+     ```
 3. **Set Up API Key:**
   Obtain an API key from OpenWeatherMap and replace the placeholder in src/constants/Api.js with your key.
    
 4. **Run the App:**
-```bash
-  npm start
-  ```
+   ```bash
+     npm start
+     ```
 Open http://localhost:3000 to view the app in the browser.
 
 ### API Key
