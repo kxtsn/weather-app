@@ -1,0 +1,117 @@
+
+#main{
+    background-image: url("../assets/bg-light.png");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+
+.weatherContainer {
+    flex:1;
+    -webkit-backdrop-filter: blur(20px) brightness(100%);
+    backdrop-filter: blur(20px) brightness(100%);
+    background-color: #ffffff33;
+    border: 1px solid;
+    border-color: #ffffff80;
+    border-radius: 40px;
+    height: 1145px;
+    position: fixed;
+    top: 0;
+    width: 700px;
+    margin-top:220px;
+    justify-content: center;
+  }
+
+  .weatherContainer img {
+    position: absolute;
+    right: 0;
+    width:300px;
+    left: 0;
+    mix-blend-mode: soft-light; 
+    object-fit: cover;
+    margin-top: -100px;
+    margin-left: 370px;
+    opacity: 1; 
+    z-index: 2;
+  }
+
+  .weatherContainer .normalText {
+    font-family: "Noto Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-top:46px;
+  }
+
+  #degree {
+    color:#6C40B5;
+    font-size:100px;
+    font-weight:700;
+    padding-left: 50px;
+    letter-spacing: 0em;
+  }
+
+  .detailsContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-self: center;
+    padding-top:10px;
+    padding-left:50px;
+    width:600px;
+    margin-bottom: 26px;
+
+  }
+
+  .detailsText{
+    text-align: left;
+    color: #666;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    flex:1
+  }
+
+  #weatherType, #humidity{
+    text-align: right;
+  }
+
+  #country{
+    font-weight: 700;
+  }
+
+  /* @media (max-width: 768px) {
+    .weatherContainer {
+      width: 90%;
+      height: auto;
+    }
+
+    #main{
+        height:auto;
+        width:100%;
+        overflow: hidden;
+    }
+  
+    .weatherContainer img {
+      width: 30%;
+      margin-left: 70%;
+      margin-top:-50px;
+    }
+  
+    .weatherContainer .normalText,
+    #degree,
+    .detailsContainer,
+    .detailsText,
+    #weatherType,
+    #humidity,
+    #country {
+      padding-left: 26px;
+      text-align: center;
+    }
+  } */

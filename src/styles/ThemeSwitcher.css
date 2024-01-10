@@ -1,0 +1,59 @@
+
+.theme-switch {
+    position: relative;
+    display: flex;
+    flex:1;
+    padding-left:10px;
+  }
+  
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .theme-switch input:checked + span {
+    background-color: #2196F3;
+  }
+  
+  .theme-switch input:checked + span:before {
+    transform: translateX(26px);
+    content: '';
+  }
+  
+  .theme-switch span {
+    border-radius: 34px;
+    display: block;
+    background-color: #ccc;
+    position: absolute;
+    transition: background-color 0.3s;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .theme-switch span:before {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+
+  .theme-switch-container {
+    background-color: #6c3fb4;
+    border: none;
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+    flex-shrink: 0;
+    padding: 0;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
